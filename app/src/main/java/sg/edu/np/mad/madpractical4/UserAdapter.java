@@ -22,7 +22,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserViewHolder> {
     Context context;
     List<User> data;
 
-    public UserAdapter(Context context, List<User> input){
+    public UserAdapter(List<User> input, Context context){
         this.context = context;
         data = input;
     }
