@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         tvName.setText(user.name);
         tvDescription.setText(user.description);
-        if (user.isFollowed() == true) {
+        if (user.getFollowed() == true) {
             btnfollow.setText("Unfollow");
         }
         else {
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         btnfollow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (user.isFollowed() == true) {
+                if (user.getFollowed() == true) {
                     user.followed = false;
                     btnfollow.setText("Follow");
                     Toast.makeText(MainActivity.this,"Unfollow",Toast.LENGTH_SHORT).show();

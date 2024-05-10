@@ -24,7 +24,7 @@ public class User {
         return id;
     }
 
-    public boolean isFollowed() {
+    public boolean getFollowed() {
         return followed;
     }
 }

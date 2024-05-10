@@ -59,7 +59,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserViewHolder> {
                         Intent mainactivity = new Intent(context, MainActivity.class);
                         mainactivity.putExtra("randomnum", user.getName());
                         mainactivity.putExtra("randdesc", user.getDescription());
-                        mainactivity.putExtra("randfollow", user.isFollowed());
+                        mainactivity.putExtra("randfollow", user.getFollowed());
                         context.startActivity(mainactivity);
                     }
                 });
