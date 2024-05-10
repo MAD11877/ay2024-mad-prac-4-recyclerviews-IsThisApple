@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -52,10 +53,12 @@ public class MainActivity extends AppCompatActivity {
                 if (user.isFollowed() == true) {
                     user.followed = false;
                     btnfollow.setText("Follow");
+                    Toast.makeText(MainActivity.this,"Unfollow",Toast.LENGTH_SHORT).show();
                 }
                 else{
                     user.followed = true;
                     btnfollow.setText("Unfollow");
+                    Toast.makeText(MainActivity.this,"Follow",Toast.LENGTH_SHORT).show();
                 }
             }
         });
